@@ -1,4 +1,5 @@
 use wasm_bindgen::prelude::*;
+pub mod llama2;
 
 #[wasm_bindgen]
 pub fn init_logger() {

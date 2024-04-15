@@ -25,6 +25,9 @@ onmessage = (event) => {
     case WorkerStatus.Health:
       llama2.health_check();
       break;
+    case WorkerStatus.LoadModel:
+      llama2.llama2();
+      break;
     default:
       break;
   }

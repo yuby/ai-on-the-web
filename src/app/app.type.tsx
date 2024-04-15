@@ -4,6 +4,7 @@ export enum WorkerStatus {
   Init = 'init',
   Health = 'health',
   Working = 'working',
+  LoadModel = 'load_model',
 }
 
 export interface WorkerProps {

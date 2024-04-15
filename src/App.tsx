@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import WorkerContext from '@components/workerContext';
 import Llama2Worker from '@workers/llama2.worker?worker';
 import { WorkerStatus } from '@app/app.type';
+import Llama2 from '@components/Llama2';
 
 function App() {
   const [worker, setWorker] = useState<Worker | null>(null);
@@ -29,9 +30,7 @@ function App() {
 
   return (
     <WorkerContext.Provider value={worker}>
-      <div>
-        App
-      </div>
+      <Llama2 />
     </WorkerContext.Provider>
   );
 }
